@@ -1,6 +1,6 @@
 {
   "name": "tmpin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Add stdin support to any CLI app that supports file input",
   "license": "MIT",
   "repository": "sindresorhus/tmpin",
