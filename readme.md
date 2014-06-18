@@ -1,6 +1,6 @@
 # tmpin [![Build Status](https://travis-ci.org/sindresorhus/tmpin.svg?branch=master)](https://travis-ci.org/sindresorhus/tmpin)
 
-> Add stdin support to any CLI app that supports file input
+> Adds stdin support to any CLI app that accepts file input
 
 It pipes stdin to a tempfile and spawns the chosen app with the tempfile path as the first argument.
 
