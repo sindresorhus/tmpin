@@ -27,6 +27,17 @@ Example
 ```
 
 
+## Tip
+
+Create an alias in your `.zshrc`/`.bashrc`:
+
+```sh
+alias atom='tmpin atom'
+# or more specific
+alias gda='git diff | tmpin atom'
+```
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
