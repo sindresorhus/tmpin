@@ -9,15 +9,16 @@ var argv = process.argv.slice(2);
 
 function help() {
 	console.log([
-		pkg.description,
 		'',
-		'Usage',
-		'  $ echo <string> | tmpin <app> [<args>]',
+		'  ' + pkg.description,
 		'',
-		'Example',
-		'  $ git diff | tmpin atom',
+		'  Usage',
+		'    echo <string> | tmpin <app> [<args>]',
 		'',
-		'Note that the first arg to <app> will be set to the tempfile'
+		'  Example',
+		'    git diff | tmpin atom',
+		'',
+		'  Note that the first arg to <app> will be set to the tempfile'
 	].join('\n'));
 }
 

@@ -2,7 +2,7 @@
 var assert = require('assert');
 var spawn = require('child_process').spawn;
 
-it('should ', function (cb) {
+it('should fake stdin support', function (cb) {
 	var actual = '';
 	var fixture = 'unicorn';
 	var cp = spawn('./cli.js', ['./fixture.js']);

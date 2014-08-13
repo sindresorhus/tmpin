@@ -1,16 +1,16 @@
 {
   "name": "tmpin",
   "version": "0.1.0",
-  "description": "Adds stdin support to any CLI app that accepts file input",
+  "description": "Add stdin support to any CLI app that accepts file input",
   "license": "MIT",
   "repository": "sindresorhus/tmpin",
-  "bin": {
-    "tmpin": "cli.js"
-  },
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
+  },
+  "bin": {
+    "tmpin": "cli.js"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -35,7 +35,7 @@
     "path"
   ],
   "dependencies": {
-    "tempfile": "^0.1.3"
+    "tempfile": "^1.0.0"
   },
   "devDependencies": {
     "mocha": "*"
