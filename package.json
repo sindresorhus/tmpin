@@ -32,7 +32,9 @@
     "pipe",
     "app",
     "file",
-    "path"
+    "path",
+    "process",
+    "substitution"
   ],
   "dependencies": {
     "tempfile": "^1.0.0"
