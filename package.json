@@ -1,45 +1,46 @@
 {
-  "name": "tmpin",
-  "version": "1.0.1",
-  "description": "Add stdin support to any CLI app that accepts file input",
-  "license": "MIT",
-  "repository": "sindresorhus/tmpin",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": "cli.js",
-  "preferGlobal": true,
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "bin",
-    "stdio",
-    "stdin",
-    "tmp",
-    "temp",
-    "shell",
-    "pipe",
-    "app",
-    "file",
-    "path",
-    "process",
-    "substitution"
-  ],
-  "dependencies": {
-    "tempfile": "^1.0.0"
-  },
-  "devDependencies": {
-    "mocha": "*"
-  }
+	"name": "tmpin",
+	"version": "1.0.1",
+	"description": "Add stdin support to any CLI app that accepts file input",
+	"license": "MIT",
+	"repository": "sindresorhus/tmpin",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"stdio",
+		"stdin",
+		"tmp",
+		"temp",
+		"shell",
+		"pipe",
+		"app",
+		"file",
+		"path",
+		"process",
+		"substitution"
+	],
+	"dependencies": {
+		"meow": "^4.0.0",
+		"tempy": "^0.2.1"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"execa": "^0.10.0",
+		"xo": "*"
+	}
 }

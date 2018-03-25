@@ -1,24 +1,8 @@
-'use strict';
-var assert = require('assert');
-var spawn = require('child_process').spawn;
+import test from 'ava';
+import execa from 'execa';
 
-it('should fake stdin support', function (cb) {
-	var actual = '';
-	var fixture = 'unicorn';
-	var cp = spawn('./cli.js', ['./fixture.js']);
-
-	cp.stdout.setEncoding('utf8');
-	cp.stdout.on('data', function (data) {
-		actual += data;
-	});
-
-	cp.stderr.pipe(process.stderr);
-
-	cp.on('close', function () {
-		assert.strictEqual(actual, fixture);
-		cb();
-	});
-
-	cp.stdin.setEncoding('utf8');
-	cp.stdin.write(fixture);
+test('main', async t => {
+	const fixture = 'unicorn';
+	const {stdout} = await execa('./cli.js', ['./fixture.js'], {input: fixture});
+	t.is(stdout, fixture);
 });
