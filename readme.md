@@ -1,4 +1,4 @@
-# tmpin [![Build Status](https://travis-ci.org/sindresorhus/tmpin.svg?branch=master)](https://travis-ci.org/sindresorhus/tmpin)
+# tmpin
 
 > Add stdin support to any CLI app that accepts file input
 
