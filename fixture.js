@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-'use strict';
-const fs = require('fs');
+import process from 'node:process';
+import fs from 'node:fs';
 
 process.stdout.write(fs.readFileSync(process.argv[2], 'utf8'));

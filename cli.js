@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-'use strict';
-const fs = require('fs');
-const {spawn} = require('child_process');
-const meow = require('meow');
-const tempy = require('tempy');
+import process from 'node:process';
+import fs from 'node:fs';
+import {spawn} from 'node:child_process';
+import meow from 'meow';
+import tempy from 'tempy';
 
 const file = tempy.file();
 const argv = process.argv.slice(2);
@@ -16,7 +16,9 @@ meow(`
 	  git diff | tmpin atom
 
 	Note that the first arguments to <app> will be set to the temp file
-`);
+`, {
+	importMeta: import.meta,
+});
 
 process.stdin.pipe(fs.createWriteStream(file));
 

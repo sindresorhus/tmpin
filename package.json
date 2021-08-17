@@ -4,14 +4,16 @@
 	"description": "Add stdin support to any CLI app that accepts file input",
 	"license": "MIT",
 	"repository": "sindresorhus/tmpin",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
 	"bin": "cli.js",
 	"engines": {
-		"node": ">=6"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -35,12 +37,12 @@
 		"substitution"
 	],
 	"dependencies": {
-		"meow": "^4.0.0",
-		"tempy": "^0.2.1"
+		"meow": "^10.1.1",
+		"tempy": "^1.0.1"
 	},
 	"devDependencies": {
-		"ava": "*",
-		"execa": "^0.10.0",
-		"xo": "*"
+		"ava": "^3.15.0",
+		"execa": "^5.1.1",
+		"xo": "^0.44.0"
 	}
 }
